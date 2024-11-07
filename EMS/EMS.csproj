@@ -5,6 +5,148 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="EMSASE2000AutomateAPI">
+      <HintPath>Dependencies\EMSASE2000AutomateAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="EMScommonsLibrary">
+      <HintPath>Dependencies\EMScommonsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Fault Data Recorder">
+      <HintPath>Dependencies\Fault Data Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="GPIOAPI">
+      <HintPath>Dependencies\GPIOAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="NativeDesktopAutomationAPI">
+      <HintPath>Dependencies\NativeDesktopAutomationAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ReturnStatus">
+      <HintPath>Dependencies\ReturnStatus.dll</HintPath>
+    </Reference>
+    <Reference Include="SensorSimulatorAPI">
+      <HintPath>Dependencies\SensorSimulatorAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="SICommonLibrary">
+      <HintPath>Dependencies\SICommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SWAT.Utilities">
+      <HintPath>Dependencies\SWAT.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dependencies\AForge.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\AForge.Imaging.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="DNP3Emulator.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DNP3EmulatorApp.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="EMSApplication.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\EMSASE2000AutomateAPI.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\EMScommonsLibrary.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\EMSMappingDataDNP3.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\EMSProfileDataDNP3.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\EPPlus.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Fault Data Recorder.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\GPIOAPI.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="iiDCE Sensors Data.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="iiSC Sensors Data.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Ivi.DCPwr.Interop.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Ivi.Driver.Interop.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Keithley.Keithley2200.Interop.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Logger.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\MccDaq.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\MeasurementComputing.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NationalInstruments.Common.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NationalInstruments.DAQmx.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NationalInstruments.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NationalInstruments.MStudioCLM.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NationalInstruments.NiLmClientDLL.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\NativeDesktopAutomationAPI.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\ReturnStatus.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\SensorSimulatorAPI.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\SerialMessageAPI.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\SICommonLibrary.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\SWAT.Utilities.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\System.IO.Ports.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Dependencies\Tesseract.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="ValueMapper.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="VDJasonUpdate.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

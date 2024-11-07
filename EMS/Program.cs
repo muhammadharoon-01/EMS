@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Reflection;
 
 class Program
 {
+    static string workingDirectoryPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Substring(6);
+
     static void Main(string[] args)
     {
         try
         {
+
             ProcessStartInfo processInfo = new ProcessStartInfo
             {
-                FileName = "J:\\SW-E2E\\01-ATM Repository\\Code Workspace\\Working\\EMSApplication.exe", // Replace with the application or script you want to run
+                FileName = Path.Combine(workingDirectoryPath, "EMSApplication.exe"), // Replace with the application or script you want to run
                 UseShellExecute = true,
                 Verb = "runas" // This prompts the process to run as an administrator
             };
