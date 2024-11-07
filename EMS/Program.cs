@@ -10,17 +10,16 @@ class Program
     {
         try
         {
-
-            ProcessStartInfo processInfo = new ProcessStartInfo
+            var startInfo = new ProcessStartInfo
             {
-                FileName = Path.Combine(workingDirectoryPath, "EMSApplication.exe"), // Replace with the application or script you want to run
-                UseShellExecute = true,
-                Verb = "runas" // This prompts the process to run as an administrator
+                FileName = Path.Combine(workingDirectoryPath, "EMSApplication.exe"), // or your application's path
+                UseShellExecute = true,  // Ensures the process is created with an interactive shell
+                CreateNoWindow = false, // Ensures the window is visible
+                WindowStyle = ProcessWindowStyle.Normal // Forces the process to open in a normal window
             };
 
-            // Start the process
-            Process process = Process.Start(processInfo);
-            process.WaitForExit(); // Optional: Waits for the process to complete
+            Process process = Process.Start(startInfo);
+            process.WaitForExit(); // Optional: to wait for the process to exit before continuing
         }
         catch (Exception ex)
         {
