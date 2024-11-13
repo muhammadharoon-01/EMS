@@ -4,7 +4,9 @@ using System.Reflection;
 
 class Program
 {
-    static string workingDirectoryPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Substring(6);
+    static string workingDirectoryPath = "C:\\Program Files (x86)\\Smart Wires\\SmartInterface\\SmartInterface.exe";
+    //static string workingDirectoryPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase).Substring(6);
+
 
     static void Main(string[] args)
     {
@@ -12,7 +14,9 @@ class Program
         {
             var startInfo = new ProcessStartInfo
             {
-                FileName = Path.Combine(workingDirectoryPath, "EMSApplication.exe"), // or your application's path
+
+                FileName = workingDirectoryPath,
+                //FileName = Path.Combine(workingDirectoryPath, "EMSApplication.exe"), // or your application's path
                 UseShellExecute = true,  // Ensures the process is created with an interactive shell
                 CreateNoWindow = false, // Ensures the window is visible
                 WindowStyle = ProcessWindowStyle.Normal // Forces the process to open in a normal window
